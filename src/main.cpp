@@ -20,6 +20,7 @@ void setup() {
     setAllLeds(CRGB(128, 0, 128));  // デフォルトは紫
 }
 
+
 void loop() {
     if (Serial.available() > 0) {
         String command = Serial.readStringUntil('\n');
